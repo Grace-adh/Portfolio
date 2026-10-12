@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Développeuse Full Stack</title>
+  <meta name="description" content="Portfolio de G ADH, développeuse full stack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="90" tabindex="0">
+
+  <nav class="navbar navbar-expand-md fixed-top" id="nav">
+    <div class="container">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Ouvrir le menu"><i class="bi bi-list"></i></button>
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav align-items-md-center gap-md-1">
+          <li class="nav-item"><a class="nav-link" href="#accueil"><i class="bi bi-house-door"></i> Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apropos"><i class="bi bi-person"></i> À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences"><i class="bi bi-boxes"></i> Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience"><i class="bi bi-briefcase"></i> Expérience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope"></i> Contact</a></li>
+          <li class="nav-item"><button class="theme-btn" id="themeBtn" type="button" aria-label="Changer de thème"><i class="bi bi-moon-stars"></i></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ACCUEIL -->
+  <section id="accueil" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+        <p class="hello">
+                <span id="welcome-typing"></span><span class="typing-cursor">|</span>
+        </p>
+          <h2>Je suis <span class="accent" >Wêkêgnilo Grâce ADJADJIHOUE</span></h2>
+          <p>  Développeuse web passionnée par la conception d'applications modernes et fonctionnelles, je m'intéresse
+                aussi bien à la création d'interfaces intuitives qu'au développement des fonctionnalités côté serveur.
+                Mon objectif est de concevoir des solutions fiables,adaptées aux besoins des utilisateurs.
+          </p>
+          <!--p class="muted intro">Licence en systèmes informatiques et logiciels, master en génie informatique et réseaux en cours.</p-->
+          <div class="d-flex gap-3 flex-wrap mt-4">
+            <a href="#contact" class="btn btn-accent">Me contacter</a>
+            <a href="#experience" class="btn btn-ghost">Voir mes projets</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <svg class="illus" viewBox="0 0 420 340" role="img" aria-label="Illustration d'une développeuse devant son ordinateur">
+            <ellipse cx="215" cy="305" rx="170" ry="20" fill="var(--soft)"/>
+            <rect x="40" y="30" width="190" height="130" rx="10" fill="var(--accent)"/>
+            <circle cx="56" cy="46" r="4" fill="#fff" opacity=".8"/><circle cx="70" cy="46" r="4" fill="#fff" opacity=".6"/><circle cx="84" cy="46" r="4" fill="#fff" opacity=".4"/>
+            <g stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".75">
+              <path d="M58 72h70M58 90h110M72 108h60M72 126h90M58 144h50"/></g>
+            <rect x="200" y="60" width="60" height="44" rx="8" fill="var(--ink)"/>
+            <text x="230" y="89" text-anchor="middle" fill="#fff" font-size="18" font-family="monospace">&lt;/&gt;</text>
+            <rect x="130" y="215" width="250" height="14" rx="7" fill="var(--ink)"/>
+            <rect x="150" y="229" width="10" height="70" fill="var(--ink)"/><rect x="350" y="229" width="10" height="70" fill="var(--ink)"/>
+            <circle cx="265" cy="110" r="22" fill="#f1c9a5"/>
+            <path d="M243 106q4-26 30-22q16 4 14 22q-10-14-44 0z" fill="#3a2a4d"/>
+            <path d="M240 140q25-14 50 0l8 60h-66z" fill="var(--accent)"/>
+            <rect x="210" y="175" width="100" height="8" rx="4" fill="#f1c9a5" transform="rotate(-8 260 180)"/>
+            <path d="M215 207l22-30h70l12 30z" fill="#fff" stroke="var(--line)" stroke-width="2"/>
+            <rect x="330" y="190" width="22" height="26" rx="4" fill="var(--accent)"/>
+            <path d="M385 208q-8-26 6-40q8 20-6 40zM385 208q14-18 28-14q-8 18-28 14z" fill="#7bc8a4"/>
+            <rect x="378" y="208" width="16" height="14" rx="3" fill="var(--ink)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- À PROPOS -->
+<section id="apropos" class="block">
+  <div class="container narrow">
+    <h2>À propos de moi</h2>
+
+    <p>
+      Titulaire d'une licence en Systèmes Informatiques et Logiciels
+      et actuellement étudiante en Master Génie Informatique et Réseaux,
+      je m'intéresse à la conception et au développement d'applications web
+      modernes, fonctionnelles et adaptées aux besoins des utilisateurs.
+    </p>
+
+    <p>
+      Curieuse et motivée, je développe mes compétences en développement
+      front-end et back-end, tout en accordant une importance particulière
+      à la qualité du code, à la structure des applications et à l'apprentissage
+      de nouvelles technologies.
+    </p>
+
+    <h3>Formation</h3>
+
+    <ul class="timeline">
+      <li>
+        <strong>Master en Génie Informatique et Réseaux</strong>
+        <span>Octobre 2025 – En cours</span>
+      </li>
+
+      <li>
+        <strong>Licence en Systèmes Informatiques et Logiciels</strong>
+        <span>Diplôme obtenu en juin 2025</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- COMPÉTENCES -->
+ 
+<!-- COMPÉTENCES -->
+<section id="competences" class="block alt">
+  <div class="container narrow">
+    <h2>Compétences</h2>
+
+    <div class="skill-group">
+      <h3>Développement Front-end</h3>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Bootstrap</span>
+      <span class="chip">Vue.js</span>
+    </div>
+
+    <div class="skill-group">
+      <h3>Développement Back-end</h3>
+      <span class="chip">PHP</span>
+      <span class="chip">Laravel</span>
+      <span class="chip">Java</span>
+    </div>
+
+    <div class="skill-group">
+      <h3>Bases de données</h3>
+      <span class="chip">MySQL</span>
+      <span class="chip">Oracle</span>
+      <span class="chip">Firebase</span>
+    </div>
+
+    <div class="skill-group">
+      <h3>Systèmes et virtualisation</h3>
+      <span class="chip">Windows</span>
+      <span class="chip">Linux / Ubuntu</span>
+      <span class="chip">VirtualBox</span>
+      <span class="chip">Docker</span>
+    </div>
+
+    <div class="skill-group">
+      <h3>Réseaux informatiques</h3>
+      <span class="chip">IPv4 / CIDR / VLSM</span>
+      <span class="chip">VLAN et routage</span>
+      <span class="chip">RIP et OSPF</span>
+      <span class="chip">NAT</span>
+      <span class="chip">DHCP et DNS</span>
+      <span class="chip">Cisco Packet Tracer</span>
+    </div>
+
+    <div class="skill-group">
+      <h3>Outils et conception</h3>
+      <span class="chip">Git</span>
+      <span class="chip">GitHub</span>
+      <span class="chip">Figma</span>
+      <span class="chip">UML</span>
+    </div>
+  </div>
+</section>
+
+
+  <!-- EXPÉRIENCE -->
+  <section id="experience" class="block">
+    <div class="container narrow">
+      <h2>Expérience</h2>
+      <ul class="timeline">
+        <li><strong>Stagiaire en Développement full stack — ABITECH SOLUTION</strong><span>Février 2025 – Juin 2025</span>
+          <p>Développement d'une application web et mobile de géolocalisation des banques de sang au Bénin </p>
+        </li>
+        <li><strong>Stage de développement web — CITECH SARL</strong><span>Juin 2024 - Aout 2024</span>
+          <p>Création d'interfaces.</p></li>
+      </ul>
+      <h3>Projets</h3>
+      <div class="row g-3">
+        <div class="col-md-6"><article class="project"><h4>SQL Knowledge Manager</h4><p>KM permettant de gérer et de partager des connaissances sur les bases de données SQL.</p><a href="https://grace-adh.github.io/KM_SQL/" target="_blank" rel="noopener">Voir sur GitHub</a></article></div>
+        <div class="col-md-6"><article class="project"><h4>Planner Quotidien</h4><p>Application de planification quotidienne.</p><a href="https://grace-adh.github.io/daily-planner/" target="_blank" rel="noopener">Voir sur GitHub</a></article></div>
+        <div class="col-md-6"><article class="project"><h4>YUMMY NOUILLES</h4><p>Site web pour la vente de nouilles.</p><a href="https://grace-adh.github.io/Yummy_Nouille/" target="_blank" rel="noopener">Voir sur GitHub</a></article></div>
+        <div class="col-md-6"><article class="project"><h4>Girlstore</h4><p>Site web d'achat d'articles de mode.</p><a href="https://grace-adh.github.io/girlStore/" target="_blank" rel="noopener">Voir sur GitHub</a></article></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="block alt">
+    <div class="container narrow">
+      <h2>Contact</h2>
+      <p>Un projet, une offre ou une question ? Écrivez-moi.</p>
+      <form id="contactForm" novalidate>
+        <div class="mb-3"><label for="nom" class="form-label">Nom</label><input type="text" class="form-control" id="nom" required><div class="invalid-feedback">Entre ton nom.</div></div>
+        <div class="mb-3"><label for="email" class="form-label">Adresse e-mail</label><input type="email" class="form-control" id="email" required><div class="invalid-feedback">Entre une adresse e-mail valide.</div></div>
+        <div class="mb-3"><label for="message" class="form-label">Message</label><textarea class="form-control" id="message" rows="5" required></textarea><div class="invalid-feedback">Écris ton message.</div></div>
+        <button type="submit" class="btn btn-accent">Envoyer le message</button>
+    
+      </form>
+      <div class="socials mt-4">
+        <a href="mailto:adjadjihouegrace@gmail.com"><i class="bi bi-envelope"></i> adjadjihouegrace@gmail.com</a>
+        <a href="https://github.com/Grace-adh" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/gr%C3%A2ce-adjadjihoue-5914a8269/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center muted py-4">© <span id="year"></span> Grâce ADDJADJIHOUE</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
